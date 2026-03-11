@@ -74,7 +74,7 @@ export class RdsStack extends cdk.Stack {
 
   //generate password function
   private createPassword(length: number = 12): string {
-    const characters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789!#$%&()*+,-.:;<=>?[]^_`{|}~';
+    const characters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789!';
     let password = '';
     for (let i = 0; i < length; i++) {
       password += characters.charAt(Math.floor(Math.random() * characters.length));
